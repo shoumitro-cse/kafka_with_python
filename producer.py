@@ -8,9 +8,7 @@ from time import sleep
 def producer_func():   
     producer = KafkaProducer(bootstrap_servers='127.0.0.1:39092')
     data = {
-        'msg': {
-            'hello': 'world',
-        },
+        'msg_data': 'Hello, How are you doing?'
     }
     serialized_data = json.dumps(data).encode('utf-8')  
     producer.send('notification', serialized_data)
@@ -25,7 +23,7 @@ def my_func():
 	print("Sending......")
 	for n in range(10):  
 		my_data = {'num' : n}  
-		my_producer.send('message', value = my_data)  
+		my_producer.send('chatting', value = my_data)  
 		sleep(2)   
 	print("Sending done!")
 	return "consumer_2 sms send success done!"
