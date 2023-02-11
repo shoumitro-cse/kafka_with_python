@@ -10,6 +10,8 @@ Apache Kafka is an open-source platform developed by the Apache Software Foundat
 ```
 https://www.baeldung.com/ops/kafka-docker-setup
 https://www.javatpoint.com/kafka-in-python
+https://pypi.org/project/kafka-python/
+https://kafka-python.readthedocs.io/en/master/usage.html
 
 pip install kafka-python
 
